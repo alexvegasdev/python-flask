@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Préstamo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Préstamo</h1>
+        <form method="POST">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="email" id="gmail" name="gmail" placeholder="Email" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+            <select id="tipo_prestamo" name="tipo_prestamo" required>
+                <option value="">Seleccione un tipo</option>
+                <option value="personal">Préstamo Personal</option>
+                <option value="hipotecario">Préstamo Hipotecario</option>
+                <option value="automotriz">Préstamo Automotriz</option>
+                <option value="educativo">Préstamo Educativo</option>
+            </select>
+            <input type="number" id="monto" name="monto" placeholder="Monto del préstamo" required>
+
+            <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+            <input type="date" id="fecha_fin" name="fecha_fin" required>
+            <div class="checkbox-group">
+                <input type="checkbox" id="acepto_condiciones" name="acepto" required>
+                <label for="acepto_condiciones">Estoy de acuerdo con las condiciones de servicio y política de privacidad</label>
+            </div>
+            <button type="submit">Registro</button>
+        </form>
+
+        
+    </div>
+</body>
+</html>

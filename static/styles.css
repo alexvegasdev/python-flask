@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #9b5de5, #5a5ee4);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: black; /* Texto negro cuando se escribe */
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid white; /* Borde blanco */
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #ffffff; /* Color gris para el placeholder */
+}
+
+
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #3b82f6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .container {
+      padding: 24px;
+      max-width: 100%;
+  }
+
+  button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  select {
+      padding: 10px;
+      font-size: 13px;
+  }
+}
