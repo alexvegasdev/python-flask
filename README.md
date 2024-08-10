@@ -1,4 +1,4 @@
-# Formulario de Registro de Préstamos usando Python con Flask
+# Formulario de Registro de Préstamos - Python + Flask
 
 Este proyecto contiene un formulario de registro de préstamos implementado con Python y Flask. Puedes clonar este repositorio y ejecutarlo para gestionar registros de préstamos de manera sencilla.
 
